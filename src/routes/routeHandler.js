@@ -13,6 +13,9 @@ router.get("/teams", (req, res) => {
 router.get("/watch", (req, res) => {
   res.render("watch");
 });
+router.get("/about_us", (req, res) => {
+  res.render("aboutus");
+});
 
 module.exports = router;
 

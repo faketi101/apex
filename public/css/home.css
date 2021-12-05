@@ -79,6 +79,10 @@ label{
     background: var(--light);
     transition: .8s;
     /* overflow: hidden; */
+    opacity: .7;
+}
+.hdr-sticky:hover{
+    opacity: 1 !important;
 }
 .head_container{
     width: 1170px;
@@ -200,10 +204,13 @@ ul.subMenu li:hover a::before{
 /* ---------------------------Slider----------------------------- */
 #home-section h1{
     font-family: inherit !important;
-    font-weight: bold !important;
+    font-weight: 900 !important;
 }
 .red{
     color: var(--red_1) !important;
+}
+.white{
+    color: var(--light) !important;
 }
 .owl-carousel .owl-item img{
     height: 540px;
@@ -813,6 +820,7 @@ intro-section, .intro-section .container_s .row {
 
 /* -------------------footer---------------- */
 footer{
+    border-top: 3px solid var(--red_1);
     padding: 20px 0;
     background: var(--dark_1);
     text-align: center;
@@ -825,3 +833,28 @@ footer p{
     height: 1000vh;
 }
 
+@media only screen and (max-width: 1200px) {
+    .head_container {
+      width: 800px;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    .head_container {
+      width: 650px;
+    }
+  }
+  @media only screen and (max-width: 670px) {
+    .head_container {
+      width: 480px;
+    }
+    .menu li a{
+        padding: 15px 5px;
+    }
+    .pMenuLogo{
+        margin-top: 13px;
+    }
+    .pMenuLogo h1{
+        font-size: 30px !important;
+    }
+  }
