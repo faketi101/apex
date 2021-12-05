@@ -4,7 +4,9 @@
   "description": "apexbattelion website by express",
   "main": "index.js",
   "scripts": {
-    "test": "nodemon index.js"
+    "test": "nodemon index.js",
+    "server": "node index.js",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -15,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/faketi101/apex/issues"
   },
-  "homepage": "https://github.com/faketi101/apex#readme",
+  "homepage": "https://faketi101.github.io/apexbattelion-site/",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
