@@ -68,6 +68,8 @@ label{
 .primaryMenu{
     box-shadow: 0 0 10px 0 rgba(182, 182, 182, 0.75);
     height: 68px;
+    /* opacity: .5; */
+    background: #fcdcdcde;
 }
 .hdr-sticky{
     position: sticky;
@@ -87,11 +89,14 @@ label{
 .head_container{
     width: 1170px;
     margin: auto;
+    /* opacity: 01; */
 }
 .primaryMenuWrapper{
     display: table;
     width: 100%;
     /* height: 5px; */
+    opacity: 01;
+    background: none;
 }
 .join_us{
     /* border: 4px solid var(--dark_1); */
@@ -339,7 +344,7 @@ intro-section, .intro-section .container_s .row {
     overflow: hidden;
     float: left;
     margin: 20px 10px;
-
+    cursor: pointer;
     transition: .5s;
     filter: grayscale(1);
 
@@ -380,7 +385,7 @@ intro-section, .intro-section .container_s .row {
     color: var(--light);
     position: absolute;
     z-index: 1;
-    top: 0%;
+    top: 10%;
     width: 100%;
     height: 100%;
     padding: 30px;
@@ -440,12 +445,35 @@ intro-section, .intro-section .container_s .row {
     transform: translateX(0) !important;
 }
 
-
-
-
+.team_header{
+    width: 100%;
+    background: var(--dark_2);
+    border-bottom: 2px solid var(--red_1);
+}
+.team_header ul{
+    margin: 0;
+    padding: 10px 0;
+    list-style: none;
+}
+.team_header ul li{
+    margin: 0 10px;
+    display: inline-block;
+}
+.team_header ul li a{
+    text-decoration: none;
+    font: 16px oswald;
+    color: var(--light);
+    font-weight: 900;
+    transition: .3s;
+}
+.team_header ul li a:hover{
+    color: var(--red_1);
+}
 
 /* ----------------------------------------- TEAM MEMBERS------------------------------- */
-
+.team_members{
+    padding-bottom: 50px;
+}
 .dev_vard {
     margin: 0;
     pad: 100px 0px;
@@ -599,6 +627,13 @@ intro-section, .intro-section .container_s .row {
   
 
   /* -------------------utilities--------------------- */
+  .log_img_bg{
+    background: url("../img/apex_bg_1.png") !important;
+    background-position: center !important; 
+    background-repeat: no-repeat !important; 
+    background-size: cover !important;
+    background-attachment: fixed !important;
+}
 
   .topContent{
     width: 500px;
@@ -632,7 +667,7 @@ intro-section, .intro-section .container_s .row {
 /* ---------------------------WATCH SECTION------------------------- */
 
 .single_watch{
-    margin: 50px 0;
+    margin-top: 50px;
     width: 100%;
     height: 600px;
     border-bottom: 3px solid var(--red_1);

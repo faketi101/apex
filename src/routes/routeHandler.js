@@ -17,5 +17,9 @@ router.get("/about_us", (req, res) => {
   res.render("aboutus");
 });
 
+
+router.get("/valorant_members", (req, res) => {
+  res.render("team_mem");
+});
 module.exports = router;
 

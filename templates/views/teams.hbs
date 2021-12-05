@@ -9,14 +9,15 @@
 </head>
 <body>
      {{>header}}
-    <section class="" id="teams">
+     {{>team_header}}
+    <section class="log_img_bg" id="teams">
         <div class="topContent">
-            <h1 class="section_header">MEET OUR <span class="red">SQUADS</span></h1>
+            <h1 class="white section_header">MEET OUR <span class="red">SQUADS</span></h1>
             
         </div>
         
         <div class="s">
-            <div class="singleProject">               
+            <div class="singleProject" id="warzone">               
                 <img class="img_bef" src="../img/warzone.jpg" alt="">
                 <img class="img_af" src="../img/warzone-2.jpg" alt="">
             <div class="projectInfo">
@@ -102,5 +103,12 @@
 
     {{>footer}}     
 
+    <script>
+       const singleProject=  document.getElementById("warzone");
+       singleProject.addEventListener("click", ()=>{
+           console.log("clicked")
+           window.location.href="/valorant_members"
+       })
+    </script>
 </body>
 </html>
