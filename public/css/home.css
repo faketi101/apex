@@ -987,3 +987,29 @@ footer p{
 .team_join .contents a:hover{
     background: var(--dark_1);
 }
+
+/* ========================================================================== */
+    /* all_atchievements */
+/* ========================================================================== */
+.all_atchievements{
+    background: url("../img/apex_bg_1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.all_matches{
+    background: url("../img/apex_bg_1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    text-align: center;
+}
+.all_atchievements h1, .all_matches h1{
+    color: var(--light) !important;
+    font: 40px oswald !important;
+    font-weight: 900 !important;
+}

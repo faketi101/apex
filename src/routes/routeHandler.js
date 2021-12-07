@@ -1,12 +1,15 @@
 const express = require("express");
 const router = express.Router();
 
+const join_us_controller = require("../controllers/join_us_controller");
+
 router.get("/", (req, res) => {
   res.render("home");
 });
 router.get("/join_us", (req, res) => {
   res.render("joinus");
 });
+router.post("/join_us", join_us_controller);
 router.get("/teams", (req, res) => {
   res.render("teams");
 });
