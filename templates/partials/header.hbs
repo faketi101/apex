@@ -10,19 +10,36 @@
                 
                 <div class="menu">
                     <ul>
-                        <li><a href="/teams" class="mHome abcd">TEAMS</a>
+                       {{#if this.team}}
+                        <li><a href="/teams" class="mHome abcd act_menu">TEAMS</a></li>
+                        {{else}}
+                            <li><a href="/teams" class="mHome abcd">TEAMS</a></li>
+                        {{/if}}
                             
                         
-                        </li>
-                        <li><a href="/watch" class="mPage">WATCH</a>
+                        {{#if this.watch}}
+                        <li><a href="/watch" class="mPage act_menu">WATCH</a></li>
+                        {{else}}
+                            <li><li><a href="/watch" class="mPage">WATCH</a></li>
+                        {{/if}}
+                        
                             
-                        </li>
-                        <li><a href="/about_us" class="mServices">ABOUT US</a>
+                     {{#if this.aboutus}}
+                        <li><li><a href="/about_us" class="mServices act_menu">ABOUT US</a></li>
+                        {{else}}
+                            <li><a href="/about_us" class="mServices">ABOUT US</a>
+                        {{/if}}
+                        
                             
-                        </li>
-                        <li class=""><a href="join_us" class="mProjects join_us">JOIN US</a>
+                        {{#if this.joinus}}
+                        <li><a href="join_us" class="mProjects join_us join_us_act">JOIN US</a></li>
+                        {{else}}
+                            <li><a href="join_us" class="mProjects join_us">JOIN US</a></li>
+                        {{/if}}
+                        
+            
                            
-                        </li>
+                        
                        
                     </ul>
                 </div>

@@ -1,7 +1,23 @@
 <div class="team_header">
     <ul>
+        {{#if this.allteam}}
+            <li><a href="/teams" class="sub_act">ALL TEAMS</a></li>
+        {{else}}
         <li><a href="/teams">ALL TEAMS</a></li>
+        {{/if}}
+
+        {{#if this.allmatches}}
+            <li><a href="/all_matches" class="sub_act">ALL MATCHES</a></li>
+        {{else}}
         <li><a href="/all_matches">ALL MATCHES</a></li>
+        {{/if}}
+
+        {{#if this.all_atchievements}}
+            <li><a href="/all_atchievements" class="sub_act">ALL ATCHIEVEMENTS</a></li>
+        {{else}}
         <li><a href="/all_atchievements">ALL ATCHIEVEMENTS</a></li>
+        {{/if}}
+        
+        
     </ul>
 </div>

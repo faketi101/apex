@@ -14,7 +14,7 @@
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 8px;
   }
   
   /* Track */
@@ -147,7 +147,7 @@ label{
     font-family: 'Oswald', sans-serif;
     padding: 15px 20px;
     color: rgb(27, 21, 21);
-    font-weight: 500;
+    font-weight: 900;
     transition: .5s;
 }
 .menu li a:hover{
@@ -491,27 +491,42 @@ intro-section, .intro-section .container_s .row {
     justify-content: center;
     width: 80%;
     margin: auto;
-    column-count: 3; 
+    /* column-count: 3; */
     margin-top: 25px;
   }
   
   .our_team {
-    background:   #222121;
     text-align: center;
     overflow: hidden;
     position: relative;
-    margin: 0px 39px;
+    margin: 20px;
     padding: 40px 55px;
     justify-content: center;
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-items: center;
-    height: 375px;
-    width: 200px;
+    height: 250px;
+    width: 90%;
     transition: .5s;
+    cursor: pointer;
+    border-bottom: 3px solid var(--red_1);
   }
-  
+  .our_team_bg{
+      content: "";
+      width: 100%;
+      height: 0;
+      background: var(--light);
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0.65;
+      transition: .3s;
+    filter: blur(100px);
+  }
+  .our_team:hover .our_team_bg{
+    height: 100% !important;
+  }
   .our_team .pic {
     display: inline-block;
     width: 130px;
@@ -519,6 +534,7 @@ intro-section, .intro-section .container_s .row {
     margin-bottom: 0;
     z-index: 1;
     position: relative;
+    opacity: 0;
   }
   
   .our_team .pic::before {
@@ -554,6 +570,7 @@ intro-section, .intro-section .container_s .row {
     left: 0;
     z-index: -1;
   }
+  
   .our_team .pic img {
     width: 100%;
     height: 100%;
@@ -562,19 +579,22 @@ intro-section, .intro-section .container_s .row {
     transition: all 0.9s ease 0s;
   }
   .our_team:hover .pic img {
+ 
     box-shadow: 0 0 0 14px #f7f5ec;
     transform: scale(0.7);
   }
-  .our_team .team-content {
-    margin-bottom: 30px;
+  .our_team .team_content {
+    opacity: 0;
+    transition: .3s;
+    z-index: 1;
   }
   .our_team .tittle {
     font-size: 35px;
     font-weight: 700;
     font-family: oswald;
-    color: #7eb1e3;
+    color: var(--dark_1);
     letter-spacing: 1;
-    margin-bottom: 5px;
+    margin: 5px 0;
   }
   .our_team .post {
     display: block;
@@ -613,7 +633,12 @@ intro-section, .intro-section .container_s .row {
     color: var(--red_1);
     background: #f7f5ec;
   }
-  
+  .our_team:hover .team_content{
+      opacity: 1 !important;
+  }
+  .our_team:hover .pic{
+    opacity: 1 !important;
+  }
   @media (max-width: 850px) {
     .container {
       flex-direction: column;
@@ -660,8 +685,16 @@ intro-section, .intro-section .container_s .row {
     line-height: 1.5;
     color: #252525;
 }
-
-
+.act_menu{
+    color: var(--red_1) !important;
+    border-bottom: 2px solid var(--red_1);
+}
+.join_us_act{
+    background: var(--dark_1) !important;
+}
+.sub_act{
+    color: var(--red_1) !important;
+}
 
 /* ---------------------------WATCH SECTION------------------------- */
 /* ---------------------------WATCH SECTION------------------------- */
@@ -671,6 +704,10 @@ intro-section, .intro-section .container_s .row {
     width: 100%;
     height: 600px;
     border-bottom: 3px solid var(--red_1);
+}
+.single_watch h1{
+    font: 40px oswald !important;
+    font-weight: 900 !important;
 }
 .all_content{
     display: flex;
@@ -739,6 +776,18 @@ intro-section, .intro-section .container_s .row {
 
 .p_4{
     background: url("../img/Samid.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.p_5{
+    background: url("../img/Navid_APxBT_WZ_Streamer.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.p_6{
+    background: url("../img/Alfred_Banner.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -867,7 +916,9 @@ footer p{
 .test{
     height: 1000vh;
 }
-
+/* =========================================================================== */
+/* =========================RESPONSIVE============================== */
+/* =========================================================================== */
 @media only screen and (max-width: 1200px) {
     .head_container {
       width: 800px;
@@ -893,3 +944,46 @@ footer p{
         font-size: 30px !important;
     }
   }
+
+
+/* =========================================================================== */
+.team_join{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+}
+.team_join_bg{
+    background: url("../img/apex_bg_1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    height: 100%;
+
+}
+.team_join .contents{
+    text-align: center;
+}
+.team_join .contents h1{
+    color: var(--light);
+    margin-bottom: 25px;
+    font: 30px oswald !important;
+    font-weight: 900 !important;
+}
+.team_join .contents a{
+    text-decoration: none;
+    color: var(--light);
+    font: 30px oswald;
+    font-weight: 900;
+    background: var(--red_1);
+    padding: 15px 30px;
+    border-radius: 10px;
+    margin-top: 15px;
+    transition: .3s;
+}
+.team_join .contents a:hover{
+    background: var(--dark_1);
+}

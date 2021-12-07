@@ -10,8 +10,8 @@
 
 </head>
 <body>
-     {{>header}}
-     {{>team_header}}
+     {{>header team=true}}
+     {{>team_header allteam=true}}
     <section class="log_img_bg" id="teams">
         <div class="topContent">
             <h1 class="white section_header">MEET OUR <span class="red">SQUADS</span></h1>
@@ -32,7 +32,7 @@
         </div>
 
 
-        <div class="singleProject">               
+        <div class="singleProject" id="valorant">               
             <img class="img_bef" src="../img/valorant-1.jpeg" alt="">
             <img class="img_af" src="../img/valorant-1.jpeg" alt="">
         <div class="projectInfo">
@@ -44,7 +44,7 @@
         </div>
     </div>
 
-    <div class="singleProject">               
+    <div class="singleProject" id="rocket">               
         <img class="img_bef" src="../img/rocket_league.jpg" alt="">
         <img class="img_af" src="../img/rocket_league.jpg" alt="">
     <div class="projectInfo">
@@ -56,7 +56,7 @@
     </div>
 </div>
 
-<div class="singleProject">               
+<div class="singleProject" id="csgo">               
     <img class="img_bef" src="../img/csgo.png" alt="">
     <img class="img_af" src="../img/csgo.png" alt="">
 <div class="projectInfo">
@@ -68,7 +68,7 @@
 </div>
 </div>
 
-<div class="singleProject">               
+<div class="singleProject" id="apex">               
     <img class="img_bef" src="../img/apex_legends.jpg" alt="">
     <img class="img_af" src="../img/apex_legends.jpg" alt="">
 <div class="projectInfo">
@@ -80,7 +80,7 @@
 </div>
 </div>
 
-<div class="singleProject">               
+<div class="singleProject" id="pubg">               
     <img class="img_bef" src="../img/pubg.jpg" alt="">
     <img class="img_af" src="../img/pubg.jpg" alt="">
 <div class="projectInfo">
@@ -105,12 +105,6 @@
 
     {{>footer}}     
 
-    <script>
-       const singleProject=  document.getElementById("warzone");
-       singleProject.addEventListener("click", ()=>{
-           console.log("clicked")
-           window.location.href="/valorant_members"
-       })
-    </script>
+    <script src="../js/team_redirect.js"></script>
 </body>
 </html>

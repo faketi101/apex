@@ -16,10 +16,22 @@ router.get("/watch", (req, res) => {
 router.get("/about_us", (req, res) => {
   res.render("aboutus");
 });
+router.get("/looking_for_team", (req, res) => {
+  res.render("t_join_team");
+});
+router.get("/all_matches", (req, res) => {
+  res.render("all_matches");
+});
+router.get("/all_atchievements", (req, res) => {
+  res.render("all_atchievements");
+});
 
-
+router.get("/warzone_members", (req, res) => {
+  res.render("t_warzone");
+});
 router.get("/valorant_members", (req, res) => {
   res.render("team_mem");
 });
+
 module.exports = router;
 

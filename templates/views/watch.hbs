@@ -12,7 +12,7 @@
 
 </head>
 <body>
-     {{>header}}
+     {{>header watch=true}}
     <section class="watch log_img_bg">
 
         <div class="topContent">
@@ -69,6 +69,31 @@
             </div>
          </div>
 
+         <div class="single_watch">
+            <div class="all_content p_5">
+             <div class="p_shape">
+
+                <div class="text">
+                    <h1>NAVID</h1>
+                    <a href="" target="_blank" rel="noopener noreferrer">Follow</a>
+                </div>
+             </div>
+             <div id="twitch-embed_5"></div>   
+            </div>
+         </div>
+
+         <div class="single_watch">
+            <div class="all_content p_6">
+                <div id="twitch-embed_6">
+                    
+                </div>   
+                <div class="p_shape_2 rotate"><div class="text">
+                    <h1>ALFRED</h1>
+                    <a href="" target="_blank" rel="noopener noreferrer">Follow</a>
+                </div></div>
+            </div>
+         </div>
+
     </section>
 {{>footer}}   
      <!-- Create a Twitch.Embed object that will render within the "twitch-embed" element -->
@@ -96,7 +121,18 @@
           height: 480,
           channel: "samid_ibrahim19",         
         });
+         new Twitch.Embed("twitch-embed_5", {
+          width: 854,
+          height: 480,
+          channel: "samid_ibrahim19",         
+        });
+         new Twitch.Embed("twitch-embed_6", {
+          width: 854,
+          height: 480,
+          channel: "samid_ibrahim19",         
+        });
       </script>
+      
       
 
 </body>
