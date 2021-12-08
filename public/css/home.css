@@ -3,6 +3,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 :root{
   --dark_1: #161616;
   --dark_2: #000000;
@@ -42,8 +51,12 @@ body{
     padding:0;
 }
 h1{
-    font: 40px 'Modak', cursive !important;
-    font-weight: 500;
+    /* font: 40px 'Modak', cursive; */
+    /* font-family: 'Teko', sans-serif !important; */
+    /* font-family: 'Playfair Display', serif !important; */
+    /* font-family: 'Bebas Neue', cursive !important; */
+    font-family: 'Libre Baskerville', serif !important;
+    font-weight: 700;
     margin: 0;
 }
 p{
@@ -69,7 +82,7 @@ label{
     box-shadow: 0 0 10px 0 rgba(182, 182, 182, 0.75);
     height: 68px;
     /* opacity: .5; */
-    background: #fcdcdcde;
+    background: #e9e9e9de;
 }
 .hdr-sticky{
     position: sticky;
@@ -110,7 +123,7 @@ label{
 
 }
 .pMenuLogo{
-    width: 140px;
+    /* width: 140px; */
     float: left;
     margin-top: 10px;
     cursor: pointer;
@@ -591,7 +604,7 @@ intro-section, .intro-section .container_s .row {
   .our_team .tittle {
     font-size: 35px;
     font-weight: 700;
-    font-family: oswald;
+    font-family: 'Permanent Marker', cursive;
     color: var(--dark_1);
     letter-spacing: 1;
     margin: 5px 0;
@@ -599,11 +612,12 @@ intro-section, .intro-section .container_s .row {
   .our_team .post {
     display: block;
     font-size: 25px;
-    font-family: oswald;
+    font-family: oswald !important;
     color: var(--light);
     /* background: var(--red_1); */
     transition: .5s;
-
+    text-transform: uppercase;
+    font-weight: 500;
   }
   .our_team .social {
     width: 100%;

@@ -13,6 +13,10 @@ const schema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  d_user: {
+    type: String,
+    default: false,
+  },
   data: {
     email: String,
     whyApex: String,

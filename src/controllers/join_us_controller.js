@@ -8,13 +8,13 @@ const join_us_controller = async (req, res) => {
       let saved_data = await db.create(data);
       saved_data.save();
 
-      let = {
+      let res_data = {
         success: true,
         message: "submited",
       };
       res.status(201).send(res_data);
     } else {
-      let = {
+      let res_data={
         success: false,
         message: "invalid data",
       };
