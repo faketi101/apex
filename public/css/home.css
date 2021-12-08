@@ -58,6 +58,7 @@ h1{
     font-family: 'Libre Baskerville', serif !important;
     font-weight: 700;
     margin: 0;
+    font-size: 35px !important;
 }
 p{
     font: 16px work sans;
@@ -125,7 +126,7 @@ label{
 .pMenuLogo{
     /* width: 140px; */
     float: left;
-    margin-top: 10px;
+    margin-top: 13px;
     cursor: pointer;
     /* padding-left: 58px; */
 }

@@ -39,5 +39,5 @@ function formHandler(e) {
   let json_data = JSON.stringify(send_data);
   // console.log(json_data);
   xhr.send(json_data);
-  e.reset();
+  e.target.reset();
 }
