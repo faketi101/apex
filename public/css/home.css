@@ -368,7 +368,7 @@ intro-section, .intro-section .container_s .row {
     cursor: pointer;
     transition: .5s;
     filter: grayscale(1);
-
+    box-shadow: 3px 3px var(--green_3);
 
 }
 .singleProject:hover{
@@ -696,7 +696,7 @@ intro-section, .intro-section .container_s .row {
     background-repeat: no-repeat !important; 
     background-size: cover !important;
     background-attachment: fixed !important;
-    min-height: 100vh;
+
 }
 
   .topContent{
@@ -884,6 +884,7 @@ intro-section, .intro-section .container_s .row {
 }
 .montage iframe{
     margin: 0 10px;
+    border-bottom: 3px solid var(--green_3);
 }
 .contents .links{
     width: 100%;
