@@ -48,3 +48,23 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+
+.team_apx{
+    background: url("../img/team_apx_banner.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.team_hades{
+    background: url("../img/team_hades_banner.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.team_hyrda{
+    background: url("../img/team_hyrda_banner.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

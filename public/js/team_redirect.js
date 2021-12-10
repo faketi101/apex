@@ -1,7 +1,7 @@
 const team_warzone = document.getElementById("warzone");
 const team_valorant = document.getElementById("valorant");
-const team_rocket = document.getElementById("rocket");
-const team_csgo = document.getElementById("csgo");
+const streamers = document.getElementById("streamers");
+const codm = document.getElementById("codm");
 const team_apex = document.getElementById("apex");
 const team_pubg = document.getElementById("pubg");
 
@@ -11,10 +11,10 @@ team_warzone.addEventListener("click", () => {
 team_valorant.addEventListener("click", () => {
   window.location.href = "/looking_for_team";
 });
-team_rocket.addEventListener("click", () => {
-  window.location.href = "/looking_for_team";
+streamers.addEventListener("click", () => {
+  window.location.href = "/streamers";
 });
-team_csgo.addEventListener("click", () => {
+codm.addEventListener("click", () => {
   window.location.href = "/looking_for_team";
 });
 team_apex.addEventListener("click", () => {

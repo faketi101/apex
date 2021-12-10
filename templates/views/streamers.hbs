@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APEX || STREAMERS</title>
+    <link rel="stylesheet" href="../css/home.css">
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+    <link rel="icon" href="/img/apexlogo.ico">
+
+
+</head>
+<body>
+     {{>header team=true}}
+    <section class="watch log_img_bg">
+
+        <div class="topContent">
+            <h1 class="white section_header">WATCH OUR <span class="red">STREAMERS</span></h1>
+            
+        </div>
+
+
+        <div class="single_watch">
+           <div class="all_content p_7">
+            <div class="p_shape">
+                <div class="text">
+                    <h1>SADDU</h1>
+                    <a class="twitch" href="https://www.twitch.tv/saddu_is_alive" target="_blank" rel="noopener noreferrer">Twitch</a>
+                    <a class="youtube" href="https://www.youtube.com/channel/UCsua22lj38zqmDVUK31vd_g" target="_blank" rel="noopener noreferrer">YouTube</a>
+                </div>
+            </div>
+            <div id="twitch-embed_1"></div>   
+           </div>
+        </div>
+
+
+        <div class="single_watch">
+           <div class="all_content p_5">
+            <div class="p_shape">
+                <div class="text">
+                    <h1>NAVID</h1>
+                    <a class="youtube" href="https://youtube.com/channel/UCrVYKU5CKvdrToziuHqeMMw" target="_blank" rel="noopener noreferrer">YouTube</a>
+                    <a class="facebook" href="https://www.facebook.com/mechatrix.g" target="_blank" rel="noopener noreferrer">Facebook</a>
+                </div>
+            </div>
+            <div class="frame">
+                <iframe width="854" height="390" src="https://www.youtube.com/embed/QGR0ZsLhqZE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>   
+           </div>
+        </div>
+
+
+    </section>
+{{>footer}}   
+  
+    <script type="text/javascript">
+        new Twitch.Embed("twitch-embed_1", {
+          width: 854,
+          height: 390,
+          channel: "saddu_is_alive", 
+        });
+
+        </Script>
+</body>
+</html>

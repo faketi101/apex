@@ -14,7 +14,10 @@ router.get("/teams", (req, res) => {
   res.render("teams");
 });
 router.get("/watch", (req, res) => {
-  res.render("watch");
+  res.render("watch_2");
+});
+router.get("/streamers", (req, res) => {
+  res.render("streamers");
 });
 router.get("/about_us", (req, res) => {
   res.render("aboutus");
