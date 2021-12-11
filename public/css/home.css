@@ -337,12 +337,16 @@ intro-section, .intro-section .container_s .row {
     /* column-count: 3; */
     /* margin-top: 25px; */
   }
+  .pad-50{
+    padding: 50px;
+  }
   .s{
     
     display: flex;   
     flex-flow: row wrap;
     margin: auto;
-    width: 1285px;   
+    width: 1285px; 
+    padding: 40px 0;  
     }
 .ourBestProject{
     width: 100%;
@@ -365,11 +369,12 @@ intro-section, .intro-section .container_s .row {
     overflow: hidden;
     float: left;
     margin: 20px 10px;
+    margin-bottom: 40px;
     cursor: pointer;
     transition: .5s;
     filter: grayscale(1);
     box-shadow: 3px 3px var(--green_3);
-
+   
 }
 .singleProject:hover{
     filter: grayscale(0);
@@ -848,6 +853,12 @@ intro-section, .intro-section .container_s .row {
     background-size: cover;
     background-repeat: no-repeat;
 }
+.p_8{
+    background: url("../img/murad_banner.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 .p_shape .text, .p_shape_2 .text{
     position: absolute;
     top: 35%;
@@ -918,7 +929,9 @@ intro-section, .intro-section .container_s .row {
     color: var(--light);
     font: 18px oswald;
 }
-
+.watch-2{
+    min-height: 100vh;
+}
 /* -----------------------form---------------------------- */
 .join_section{
     width: 100%;
@@ -937,6 +950,7 @@ intro-section, .intro-section .container_s .row {
     padding: 30px 40px 70px 40px;
     color: var(--light);
     border-radius: 10px;
+    box-shadow: 2px 2px 4px var(--green_3);
 }
 .join_us_form .form_heading{
     text-align: center;

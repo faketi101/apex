@@ -32,6 +32,9 @@
            integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
            crossorigin="anonymous" />
            <link rel="stylesheet" href="/css/about_us.css">
+
+           <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
            <title>APEX || HOME</title>
     <style>
         
@@ -49,7 +52,7 @@
     <div class="intro-section custom-owl-carousel" id="home-section">
         <div class="container_s">
           <div class="row align-items-center">
-            <div class="col-lg-5 mr-auto">
+            <div class="col-lg-5 mr-auto" data-aos="fade-right">
     
               <div class="owl-carousel slide-one-item-alt-text">
                 <div class="slide-text">
@@ -75,7 +78,7 @@
               </div>
     
             </div>
-            <div class="col-lg-6 ml-auto">
+            <div class="col-lg-6 ml-auto" data-aos="fade-left">
                           
               <div class="owl-carousel slide-one-item-alt">
                 <img src="../img/apexlogo.jpg" alt="Image" class="img-fluid">
@@ -111,6 +114,9 @@
 
       <script src="../js/home.js"></script>
       <script src="../js/loader.js"></script>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>

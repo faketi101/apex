@@ -7,19 +7,20 @@
     <title>APEX || TEAMS</title>
     <link rel="stylesheet" href="../css/home.css">
     <link rel="icon" href="/img/apexlogo.ico">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 </head>
 <body>
      {{>header team=true}}
      {{>team_header allteam=true}}
     <section class="log_img_bg" id="teams">
-        <div class="topContent">
+        <div class="topContent pad-50">
             <h1 class="white section_header">MEET OUR <span class="red">SQUADS</span></h1>
             
         </div>
         
         <div class="s">
-            <div class="singleProject" id="warzone">               
+            <div class="singleProject" id="warzone" data-aos="fade-down-left">               
                 <img class="img_bef" src="../img/warzone.jpg" alt="">
                 <img class="img_af" src="../img/warzone-2.jpg" alt="">
             <div class="projectInfo">
@@ -32,7 +33,7 @@
         </div>
 
 
-        <div class="singleProject" id="valorant">               
+        <div class="singleProject" id="valorant" data-aos="fade-down">               
             <img class="img_bef" src="../img/valorant-1.jpeg" alt="">
             <img class="img_af" src="../img/valorant-1.jpeg" alt="">
         <div class="projectInfo">
@@ -44,7 +45,7 @@
         </div>
     </div>
 
-    <div class="singleProject" id="codm">               
+    <div class="singleProject" id="codm" data-aos="fade-down-right">               
         <img class="img_bef" src="../img/codm.jpg" alt="">
         <img class="img_af" src="../img/codm.jpg" alt="">
     <div class="projectInfo">
@@ -56,7 +57,7 @@
     </div>
 </div>
 
-<div class="singleProject" id="streamers">               
+<div class="singleProject" id="streamers" data-aos="fade-down">               
     <img class="img_bef" src="../img/stream.jpg" alt="">
     <img class="img_af" src="../img/stream.jpg" alt="">
 <div class="projectInfo">
@@ -68,7 +69,7 @@
 </div>
 </div>
 
-<div class="singleProject" id="apex">               
+<div class="singleProject" id="apex" data-aos="fade-up-right">               
     <img class="img_bef" src="../img/apex_legends.jpg" alt="">
     <img class="img_af" src="../img/apex_legends.jpg" alt="">
 <div class="projectInfo">
@@ -80,7 +81,7 @@
 </div>
 </div>
 
-<div class="singleProject" id="pubg">               
+<div class="singleProject" id="pubg" data-aos="fade-up">               
     <img class="img_bef" src="../img/pubg.jpg" alt="">
     <img class="img_af" src="../img/pubg.jpg" alt="">
 <div class="projectInfo">
@@ -93,7 +94,7 @@
 </div>
 
 
-<div class="singleProject" id="others">               
+<div class="singleProject" id="others" data-aos="fade-up-left">               
     <img class="img_bef" src="../img/Logo_png-01.png" alt="">
     <img class="img_af" src="../img/Logo_png-01.png" alt="">
 <div class="projectInfo">
@@ -121,5 +122,9 @@
     {{>footer}}     
 
     <script src="../js/team_redirect.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>

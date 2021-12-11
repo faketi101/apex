@@ -1,10 +1,14 @@
 @import url("home.css");
 @import url('https://fonts.googleapis.com/css2?family=Hanalei&family=Modak&display=swap');
 /* -------------------------------------------meet Our Team-------------------------------------- */
+.our_vision{
+    overflow: hidden !important;
+}
 .meetOurTeam-allBlock{
     display: flex;
     justify-items: center;
     justify-content: center;
+    overflow: hidden !important;
 }
 .meetOurTeam-block h1{
     font: 25px oswald !important;
@@ -131,6 +135,7 @@
 .meetOurTeam-btn{
     width: 100%;
     text-align: center;
+    padding-bottom: 30px;
 }
 
 .meetOurTeam-btn a{
